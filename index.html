@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icon link -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/logo.png" />
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div class="mode-toggle">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+    <!--  nav bar -->
+    <div
+      class="side-nav-menu min-vh-100 position-fixed top-0 bottom-0 d-flex z-3"
+    >
+      <div class="nav-tab d-flex justify-content-between flex-column p-4">
+        <!--! nav content  -->
+        <div class="links">
+          <ul class="list-group list-unstyled overflow-hidden">
+            <li class="text-capitalize py-3">search</li>
+            <li class="text-capitalize py-3" id="categories">categories</li>
+            <li class="text-capitalize py-3" id="area">area</li>
+            <li class="text-capitalize py-3" id="ingredients">ingredients</li>
+            <li class="text-capitalize py-3">contact us</li>
+          </ul>
+        </div>
+        <div class="nav-footer position-relative">
+          <div class="icons d-flex justify-content-between fs-4 mb-2">
+            <a href="https://www.facebook.com/yousseyoussefamr" target="_blank">
+              <i class="fab fa-facebook-f p-2"></i>
+            </a>
+            <a
+              href="https://github.com/youssefamr-joo?tab=repositories"
+              target="_blank"
+            >
+              <i class="fab fa-github p-2"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ismael-amr-787595249/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in p-2"></i>
+            </a>
+          </div>
+          <div class="footer">
+            <p class="lead fs-6">
+              © 2024 Yummy. All rights reserved.
+              <span class="d-block"> Ismael ❤️</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--! show nav content  -->
+      <div class="nav-header d-flex justify-content-between flex-column">
+        <div class="header-logo">
+          <img class="logo" src="imgs/logo.png" alt="logo" />
+        </div>
+        <div class="tab-menu">
+          <i class="fas fa-align-right open-close fa-2x"></i>
+          <!-- <i class="fas fa-x open-close fa-2x"></i> -->
+        </div>
+        <div class="icons fs-5">
+          <i class="fas fa-globe d-block mb-2"></i>
+          <i class="fas fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- main content -->
+    <section id="meals">
+      <div class="container">
+        <div class="row py-5 g-4" id="meals-container"></div>
+      </div>
+    </section>
+
+    <!-- search content -->
+    <section id="search">
+      <div class="row justify-content-md-between w-75 gap-5 m-auto p-5">
+        <div class="col-md-5">
+          <div class="form w-100">
+            <input
+              type="search"
+              name="search-input"
+              id="search-input"
+              required
+            />
+            <label>
+              <span style="transition-delay: 0ms">S</span>
+              <span style="transition-delay: 50ms">e</span>
+              <span style="transition-delay: 100ms">a</span>
+              <span style="transition-delay: 150ms">r</span>
+              <span style="transition-delay: 200ms">c</span>
+              <span style="transition-delay: 250ms" class="me">h</span>
+              <span style="transition-delay: 300ms">B</span>
+              <span style="transition-delay: 350ms" class="me">y</span>
+              <span style="transition-delay: 400ms">N</span>
+              <span style="transition-delay: 450ms">a</span>
+              <span style="transition-delay: 500ms">m</span>
+              <span style="transition-delay: 550ms">e</span>
+            </label>
+          </div>
+        </div>
+        <div class="col-md-5 py-2">
+          <div class="form w-100">
+            <input type="value" required />
+            <label>
+              <span style="transition-delay: 0ms">S</span>
+              <span style="transition-delay: 50ms">e</span>
+              <span style="transition-delay: 100ms">a</span>
+              <span style="transition-delay: 150ms">r</span>
+              <span style="transition-delay: 200ms">c</span>
+              <span style="transition-delay: 250ms" class="me">h</span>
+              <span style="transition-delay: 300ms">B</span>
+              <span style="transition-delay: 350ms" class="me">y</span>
+              <span style="transition-delay: 400ms">F</span>
+              <span style="transition-delay: 450ms">i</span>
+              <span style="transition-delay: 500ms">r</span>
+              <span style="transition-delay: 550ms">s</span>
+              <span style="transition-delay: 600ms" class="me">t</span>
+              <span style="transition-delay: 650ms">L</span>
+              <span style="transition-delay: 700ms">e</span>
+              <span style="transition-delay: 750ms">t</span>
+              <span style="transition-delay: 800ms">t</span>
+              <span style="transition-delay: 850ms">e</span>
+              <span style="transition-delay: 900ms">r</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us -->
+    <section
+      id="contact"
+      class="w-75 m-auto d-flex min-vh-100 justify-content-center align-items-center"
+    >
+      <div class="ccontainer">
+        <div class="row p-5">
+          <div class="col-md-6">
+            <div class="form-group px-2 py-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group px-2 py-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group px-2 py-3">
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Enter Your Phone"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group px-2 py-3">
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="Enter Your Age"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group px-2 py-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter Your password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group px-2 py-3">
+              <input
+                type="password"
+                class="form-control"
+                id="rePassword"
+                placeholder="Confirmed Password"
+                required
+              />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div>
+              <button
+                class="btn btn-outline-warning d-block w-25 m-auto mt-3"
+                id="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JQuery link -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- bootstrap js link -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- custom js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
