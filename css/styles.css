@@ -61,6 +61,7 @@ body {
   color: var(--main-text-color);
   transition: var(--main-transition);
   margin: 0 !important;
+  overflow: hidden;
 }
 
 i {
@@ -71,7 +72,17 @@ i {
   text-align: left;
   text-align-last: left;
 }
+
+.loading-screen {
+  color: white;
+  z-index: 999;
+  display: flex;
+}
+
 /* side nav  */
+.side-nav-menu {
+  z-index: 99;
+}
 .side-nav-menu .nav-tab {
   background-color: var(--main-bg-color);
 }
