@@ -468,7 +468,7 @@ document.getElementById("contact").addEventListener("click", function () {
       class="w-100 m-auto d-flex min-vh-100 justify-content-center align-items-center"
     >
       <div class="container">
-        <div class="row p-5 g-5">
+        <div class="row p-lg-5 p-md-0 g-ld-5 g-md-3">
           <div class="col-md-6">
             <div class="form-group px-2 py-3">
               <input
