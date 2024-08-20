@@ -124,6 +124,7 @@ function displayMeals(arr) {
 }
 // display meal details home
 document.getElementById("home").addEventListener("click", function () {
+  hideSearch();
   searchByName("");
   closeSideNav();
 });
@@ -328,7 +329,7 @@ function displayMealDetails(meal) {
   // console.log(ingredients);
 
   let cartona = `
-  <div class="col-md-4">
+  <div class="col-lg-4">
           <div class="meal-img my-3 ">
               <img src="${
                 meal.strMealThumb
@@ -336,7 +337,7 @@ function displayMealDetails(meal) {
               <h4 class="text-center m-3 pt-3 h2">${meal.strMeal}</h4>
           </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-lg-8">
             <h4 class="text-uppercase fw-bold my-3">instructions</h4>
             <p class="lead opacity-75 lh-lg">
               ${meal.strInstructions}
@@ -464,10 +465,10 @@ document.getElementById("contact").addEventListener("click", function () {
   rowData.innerHTML = `
   <section
       id="contact"
-      class="w-75 m-auto d-flex min-vh-100 justify-content-center align-items-center"
+      class="w-100 m-auto d-flex min-vh-100 justify-content-center align-items-center"
     >
       <div class="container">
-        <div class="row p-5">
+        <div class="row p-5 g-5">
           <div class="col-md-6">
             <div class="form-group px-2 py-3">
               <input

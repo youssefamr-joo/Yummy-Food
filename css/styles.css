@@ -20,11 +20,8 @@ body.light-mode {
   margin: 0 !important;
 }
 .mode-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 40px;
 }
 .mode-toggle .fa-moon {
   display: none;
@@ -90,6 +87,8 @@ i {
 .side-nav-menu .nav-tab ul li {
   position: relative;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .side-nav-menu .nav-tab .nav-footer .icons a {
@@ -120,13 +119,38 @@ i {
 
 .side-nav-menu .nav-header {
   background-color: var(--main-text-color);
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   color: var(--main-bg-color);
 }
 
 .side-nav-menu .nav-header .logo {
   width: 50px;
+}
+
+@media (max-width: 767px) {
+  .side-nav-menu .nav-tab ul li {
+    font-size: 16px !important;
+    font-weight: 500;
+  }
+  .fs-6 {
+    font-size: 12px !important;
+  }
+  .fa-2x {
+    font-size: 18px;
+  }
+  .fs-5 {
+    font-size: 14px;
+  }
+  .side-nav-menu .nav-header .logo {
+    width: 30px;
+  }
+  .side-nav-menu .nav-header {
+    padding: 10px 5px;
+  }
+  .mode-toggle {
+    font-size: 20px;
+  }
 }
 
 /* content style */
@@ -310,5 +334,14 @@ i {
 @media (max-width: 767px) {
   #contact button {
     width: 90% !important;
+  }
+}
+
+/* details meals */
+
+@media (max-width: 767px) {
+  #meals .container {
+    width: 90% !important;
+    margin: 0 0 0 10% !important;
   }
 }

@@ -23,15 +23,11 @@
       <i class="fa fa-spinner fa-spin fa-5x"></i>
     </div>
 
-    <!-- mode toggle  -->
-    <div class="mode-toggle">
-      <i class="fas fa-sun"></i>
-      <i class="fas fa-moon"></i>
-    </div>
-
     <!--  nav bar -->
     <div class="side-nav-menu min-vh-100 position-fixed top-0 bottom-0 d-flex">
-      <div class="nav-tab d-flex justify-content-between flex-column p-4">
+      <div
+        class="nav-tab d-flex justify-content-between flex-column p-lg-4 pt-md-1 ps-2"
+      >
         <!--! nav content  -->
         <div class="links">
           <ul class="list-group list-unstyled overflow-hidden">
@@ -64,7 +60,7 @@
           <div class="footer">
             <p class="lead fs-6">
               © 2024 Yummy. All rights reserved.
-              <span class="d-block"> Ismael ❤️</span>
+              <span class="d-block text-center mt-3"> Ismael ❤️</span>
             </p>
           </div>
         </div>
@@ -72,8 +68,13 @@
 
       <!--! show nav content  -->
       <div class="nav-header d-flex justify-content-between flex-column">
-        <div class="header-logo">
+        <div class="header-logo position-relative">
           <img class="logo" src="imgs/logo.png" alt="logo" />
+          <!-- mode toggle  -->
+          <div class="mode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </div>
         </div>
         <div class="tab-menu">
           <i class="fas fa-align-right open-close fa-2x"></i>
@@ -89,7 +90,7 @@
     <!-- search content -->
     <section id="search-container">
       <div
-        class="row justify-content-md-between w-75 gap-5 m-auto p-5 d-none"
+        class="row justify-content-md-center gap-5 m-auto p-5 d-none"
         id="search-inputs"
       ></div>
     </section>
@@ -97,7 +98,7 @@
     <!-- main content -->
     <section id="meals">
       <div class="container">
-        <div class="row py-5 g-4" id="meals-container"></div>
+        <div class="row py-3 g-4" id="meals-container"></div>
       </div>
     </section>
 
